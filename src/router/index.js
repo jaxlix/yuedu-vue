@@ -49,7 +49,7 @@ const router =  new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    if (getCookie('userId') === undefined && to.path.indexOf('login') === -1) {
+    if (getCookie('userInfoId') === undefined && to.path.indexOf('login') === -1) {
       return next('/login')
     } else {
       return next()

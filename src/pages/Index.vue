@@ -23,10 +23,11 @@ export default {
     padding-top: 48px;
     padding-bottom: 50px;
   }
-  .slide-fade-enter-active, .slide-fade-leave-active {
-    transition: opacity .5s;
+  /* .slide-fade-enter-active, .slide-fade-leave-active {
+    transform: translate(320px);
+    transition: transform .5s;
   }
   .slide-fade-enter, .slide-fade-leave-to{
-    opacity: 0;
-  }
+    transform: translate(0);
+  } */
 </style>

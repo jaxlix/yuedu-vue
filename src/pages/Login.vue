@@ -81,7 +81,7 @@ export default {
           this.loginSwitch = false
           if (res.data.code === 1) {
             this.setUsreId(res.data.content)
-            setCookie('userId', res.data.content, 7)
+            setCookie('userInfoId', res.data.content, 7)
             this.$router.push('/index/home')
           } else if (res.data.code === 2) {
             alert(res.data.content)
